@@ -40,8 +40,8 @@ class CarState(CarStateBase):
 
     ret.leftBlinker = bool(cp.vl["STEERING_LEVERS"]['BLINKER_LEFT'])
     ret.rightBlinker = bool(cp.vl["STEERING_LEVERS"]['BLINKER_RIGHT'])
-    ret.steeringAngle = cp.vl["EPS_1"]['STEER_ANGLE']
-    ret.steeringRate = cp.vl["EPS_2"]['STEER_RATE_DRIVER']
+    ret.steeringAngleDeg = cp.vl["EPS_1"]['STEER_ANGLE']
+    ret.steeringRateDeg = cp.vl["EPS_2"]['STEER_RATE_DRIVER']
 
 #    ret.cruiseState.enabled = cp_cam.vl["FORWARD_CAMERA_ACC"]['ACC_STATUS'] == 3  # ACC is green.
 #    ret.cruiseState.available = cp_cam.vl["FORWARD_CAMERA_ACC"]['ACC_STATUS'] == 1 # ACC is white... right???
